@@ -7,46 +7,47 @@
   <title>countries</title>
   <link rel="stylesheet" href="normalize.css">
   <link rel="stylesheet" href="styles.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!-- <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300;400;600;800&display=swap" rel="stylesheet"> -->
 </head>
-<body >
-  <div class="body-wrapper">
+<body>
 
     <!-- ==========HEADER======= -->
-    <header class="site-header ">
+    <header class="site-header  ">
       <div class="header-wrapper container">
         <h2 class="header-heading">
           Where in the world?
         </h2>
-        <a  class="dark-mode-link" href="#">
-            Dark Mode
-        </a>
+        <button class="dark-mode-button button">Dark Mode</button>
       </div>
     </header>
     <main>
 
       <!--==========MAIN-TOP======== -->
       <div class="main-top container">
-        <input class="search" type="search" name="search" placeholder="Search for a country…" aria-label="search" required>
+        <form class="search-form" action="https://countries.html" method="post">
+           <div class="search">
+             <input class="search-input" type="search" name="search" placeholder="Search for a  country…" aria-label="search" required>
+            </div>
+          </form>
         <div class="regions">
-          <input class="regions-list" type="text" name="region" id="region-input" list="region-list" placeholder="Filter by Region">
-          <datalist class="regions-list" id="region-list">
-            <option>Africa</option>
-            <option> America</option>
-            <option> Asia</option>
-            <option>Europe</option>
-            <option>Oceania</option>
-          </datalist>
+          <select class="regions-list" name="region" id="region-input">
+            <option value="" selected>Filter by Region</option>
+          <option value="">Africa</option>
+          <option value="">America</option>
+          <option value="">Europe</option>
+          <option value="">Oceania</option>
+          <option value="">Asia</option>
+        </select>
         </div>
       </div>
       <ul class="cards container">
         <li class="card">
           <a class="card-img-link" href="#">
-            <img class="card-image" src="img/Flag_of_Germany.jpg" alt="flag of Germany" width="260" height="160">
+            <img class="card-image" src="img/Flag_of_Germany.jpg" alt="flag of Germany" srcset="img/Flag_of_Germany.jpg 1x, img/Flag_of_Germany@2x.jpg 2x" width="260" height="160">
           </a>
-          <div class="card-content-wrapper">
+          <div class="card-content-wrapper ">
             <h3 class="card-content-heading">
               Germany
             </h3>
@@ -57,7 +58,7 @@
         </li>
         <li class="card">
           <a class="card-img-link" href="#">
-            <img class="card-image" src="img/Flag_of_usa.jpg" alt="flag of usa"  width="260" height="160" >
+            <img class="card-image" src="img/Flag_of_usa.jpg" alt="flag of usa" srcset="img/Flag_of_usa.jpg 1x, img/Flag_of_usa@2x.jpg 2x" width="260" height="160" >
         </a>
           <div class="card-content-wrapper">
             <h3 class="card-content-heading">
@@ -70,7 +71,7 @@
         </li>
         <li class="card">
           <a class="card-img-link" href="#">
-            <img class="card-image" src="img/Flag_of_usaBrazil.jpg" alt="brazil flag" width="260" height="160" >
+            <img class="card-image" src="img/Flag_of_usaBrazil.jpg" alt="brazil flag" srcset="img/Flag_of_usaBrazil.jpg 1x, img/Flag_of_usaBrazil@2x.jpg 2x" width="260" height="160" >
           </a>
           <div class="card-content-wrapper">
             <h3 class="card-content-heading">
@@ -83,7 +84,7 @@
         </li>
         <li class="card">
           <a class="card-img-link" href="#">
-            <img class="card-image" src="img/Flag_of_Iceland.jpg" alt="iceland-flag" width="260" height="160" >
+            <img class="card-image" src="img/Flag_of_Iceland.jpg" alt="iceland-flag" srcset="img/Flag_of_Iceland.jpg 1x, img/Flag_of_Iceland@2x.jpg 2x" width="260" height="160" >
           </a>
           <div class="card-content-wrapper">
             <h3 class="card-content-heading">
@@ -98,7 +99,8 @@
       <ul class="cards container">
         <li class="card">
           <a class="card-img-link" href="#">
-            <img class="card-image" src="img/Flag_of_Afghanistan.jpg" alt="afganistan flag" width="260" height="160">
+            <img class="card-image" src="img/Flag_of_Afghanistan.jpg" alt="afganistan flag"
+            srcset="img/Flag_of_Afghanistan.jpg 1x, img/Flag_of_Afghanistan@2x.jpg 2x" width="260" height="160">
           </a>
           <div class="card-content-wrapper">
             <h3 class="card-content-heading">
@@ -111,7 +113,7 @@
         </li>
         <li class="card">
           <a class="card-img-link" href="#">
-            <img class="card-image" src="img/Flag_of_Aland.jpg" alt="flag of Aland" width="260" height="160" >
+            <img class="card-image" src="img/Flag_of_Aland.jpg" alt="flag of Aland" srcset="img/Flag_of_Aland.jpg 1x, img/Flag_of_Aland@2x.jpg 2x" width="260" height="160" >
           </a>
           <div class="card-content-wrapper">
             <h3 class="card-content-heading">
@@ -124,7 +126,7 @@
         </li>
         <li class="card">
           <a class="card-img-link" href="#">
-            <img class="card-image" src="img/Flag_Albania.jpg" alt="flag of albania" width="260" height="160">
+            <img class="card-image" src="img/Flag_Albania.jpg" alt="flag of albania" srcset="img/Flag_Albania.jpg 1x, img/Flag_Albania@2x.jpg 2x" width="260" height="160">
           </a>
           <section class="card-content-wrapper">
             <h3 class="card-content-heading">
@@ -137,7 +139,7 @@
         </li>
         <li class="card">
           <a class="card-img-link" href="#">
-            <img class="card-image" src="img/Flag_of_Algeria.jpg" alt="flag of Algeria" width="260" height="160">
+            <img class="card-image" src="img/Flag_of_Algeria.jpg" alt="flag of Algeria" srcset="img/Flag_of_Algeria.jpg 1x, img/Flag_of_Algeria@2x.jpg 2x" width="260" height="160">
           </a>
           <div class="card-content-wrapper">
             <h3 class="card-content-heading">
@@ -150,7 +152,6 @@
         </li>
       </ul>
     </main>
-  </div>
-<script src="js/main.js"></script>
+<script src="/main.js"></script>
 </body>
 </html>
