@@ -241,6 +241,10 @@ img {
   color: var(--text-color);
   padding: 24px;
 }
+.card-heading-link {
+  text-decoration: none;
+  color: var(--text-color);
+}
 .card-content-heading {
   font-family: var(--font-family-text);
   font-weight: 800;
