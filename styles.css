@@ -257,3 +257,102 @@ img {
 .card-content-text:not(:last-child){
   margin-bottom: 8px;
 }
+
+/* ===========COUNTRY======== */
+.country-page-back-link{
+display: flex;
+padding: 10px 32px;
+margin-top: 80px;
+margin-bottom: 80px;
+background-color: var(--bg-light-color);
+color: var(--text-color);
+border-radius: 5px;
+align-items: center;
+}
+.country-page-back {
+  display: inline-block;
+}
+.country-page-back-image{
+  margin-right: 10px;
+}
+.country-page-back-text {
+font-family: var(--font-family-text);
+font-weight: 300;
+font-size: 14px;
+line-height: 20px;
+}
+.country-page-flag-info {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 80px;
+}
+.country-main-image {
+width: 560px;
+height: 401px;
+background-color: var(--bg-light-color);
+box-shadow: 0px 0px 14px 4px rgba(0, 0, 0, 0.03);
+border-radius: 10.0057px;
+}
+.country-page-info {
+  width: 100%;
+  max-width: 600px;
+}
+.country-page-info-title {
+  padding-top: 40px;
+  margin: 0;
+  font-family: var(--font-family-text);
+  font-weight: 800;
+  font-size: 32px;
+  line-height: 44px;
+  margin-bottom: 23px;
+}
+.country-page-info-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.country-info-details-item {
+  display: flex;
+  font-family: var(--font-family-text);
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 32px;
+}
+.info-details-title {
+  font-weight: 600;
+  margin-right: 4px;
+}
+.info-details-title:not(:last-child){
+  margin-bottom: 12px;
+}
+.info-details-value {
+  font-weight: 300;
+  margin: 0;
+}
+
+/* =========BORDER-COUNTRIES========== */
+.border-countries {
+  display: flex;
+  align-items: center;
+}
+.border-countries-heading {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 24px;
+  margin-right: 16px;
+}
+.border-countries-list {
+}
+.border-countries-link {
+  flex-wrap: wrap;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 19px;
+  padding: 5px 20px;
+  box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.10);
+  border-radius: 2px;
+  background-color: var(--bg-light-color);
+  color: var(--text-color);
+}
+.border-countries-link:not(:last-child){
+  margin-right: 10px;
+}
