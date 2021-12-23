@@ -321,9 +321,6 @@ border-radius: 10.0057px;
   font-weight: 600;
   margin-right: 4px;
 }
-.info-details-title:not(:last-child){
-  margin-bottom: 12px;
-}
 .info-details-value {
   font-weight: 300;
   margin: 0;
